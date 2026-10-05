@@ -1,0 +1,261 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Lawrence T. Alberto | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #e9e9e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #2d3748;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #90cdf4;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .hero {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #4a5568;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #3182ce;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #2b6cb0;
+        }
+
+        section {
+            padding: 3rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2d3748;
+            border-bottom: 3px solid #3182ce;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card, .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3, .project-card h3 {
+            color: #2d3748;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-card {
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 1rem 0 0.3rem;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            margin-top: 1.5rem;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm Jeff Lawrence T. Alberto</h1>
+        <p>BS Computer Science Student | Aspiring Developer</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a second-year Bachelor of Science in Computer Science student at CATSU with a strong passion for software development and problem-solving. Through my studies, I have built a solid foundation in programming logic, data structures, and algorithm design. I am proficient in C, C++, and Java -- languages I use to write clean, efficient, and maintainable code. I approach every project with curiosity and commitment, viewing challenges as opportunities to grow. My goal is to continue expanding my technical skills, contribute to meaningful solutions, and build a career in software development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>C++ &nbsp;|&nbsp; Java &nbsp;|&nbsp; C</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML5 &nbsp;|&nbsp; CSS3 &nbsp;|&nbsp; JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & IDEs</h3>
+                <p>VS Code &nbsp;|&nbsp; OnlineGDB &nbsp;|&nbsp; Git</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Archive Restoration (Linked List)</h3>
+            <p>Data structure simulation using C++ -- pointer manipulation & rule-based processing.</p>
+        </div>
+        <div class="project-card">
+            <h3>The Clockmaker's Shelf</h3>
+            <p>Recursive binary search solution for missing-number queries.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" value="Jeff Lawrence T. Alberto" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" value="Jefftejada935@gmail.com" required>
+            
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" value="09157704248">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jeff Lawrence T. Alberto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
